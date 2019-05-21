@@ -1,0 +1,52 @@
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+    meta(name="description" content="")
+    meta(name="author" content="")
+
+    link(rel="icon" href="../assets/img/favicon.ico")
+
+    title Mediumish - A Medium inspired blogging platform.
+
+    <!-- Fonts -->
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous")
+
+    <!-- Bootstrap core CSS and Custom styles -->
+    link(rel="stylesheet" href="../assets/css/bootstrap.min.css")
+    link(rel="stylesheet" href="../assets/css/mediumish.css")
+body
+    div(id="app")
+
+
+
+
+
+
+//head
+  title blossom
+
+//body
+    h1 Welcome to Meteor!
+    +listBlogPosts
+    +addPostForm
+
+//template(name="listBlogPosts")
+    div(id="content")
+        each post
+            div(class="post")
+                h2 title
+                div(class="entry") content
+
+//template(name="addPostForm")
+    form
+        span Title:
+        input(type="text" id="titleField")
+        br
+        span Content:
+        textarea(id="contentField")
+        br
+        span Publish?
+        input(type="checkbox" id="publishedField")
+        br
+        input(type="submit")
