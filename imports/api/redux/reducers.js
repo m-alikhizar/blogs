@@ -29,6 +29,7 @@ function blogs(state = [], action) {
         case ADD_BLOG:
             return state.concat([action.data]);
         case REMOVE_BLOG:
+            console.log('remove blog')
             return remove(state, action);
         case EDIT_BLOG:
             return edit(state, action);

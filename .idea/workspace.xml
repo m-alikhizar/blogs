@@ -2,37 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f600f7-06e6-47b6-9835-34820dd512cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/main.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/blogs/blogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/blogs/methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/redux/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/redux/async-actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/redux/reducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/both/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/client/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/server/register-api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/server/security.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/startup/server/ssr-init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/NavigationHeaderBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/blog-item/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/blog-item/blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/container/FeaturedStory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/layouts/main/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/layouts/main/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/home/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/subpage/Subpage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/subpage/subpage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/navigation-header-bar.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/startup/server/accounts-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/container/Editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/container/FeaturedPosts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/container/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/layouts/secondary/Secondary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/layouts/secondary/secondary.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/compose/Compose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/compose/compose.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.jade" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/both/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/both/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/container/FeaturedStory.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/container/MainFeaturedStory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/layouts/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/layouts/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,73 +40,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/layouts/main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="444">
+              <caret line="37" lean-forward="true" selection-end-line="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/container/FeaturedStory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/NavigationHeaderBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="33" selection-end-line="48" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/compose/Compose.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="315">
+              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,10 +64,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/container/Editor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/layouts/secondary/Secondary.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/layouts/secondary/secondary.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -136,8 +116,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/startup/both/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/compose/compose.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/container/FeaturedPosts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-end-line="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -149,36 +146,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>blaze</find>
-      <find>todosGetAll</find>
-      <find>helmet</find>
-      <find>./securi</find>
-      <find>onPageLoad</find>
-      <find>getAll</find>
-      <find>react</find>
-      <find>jade</find>
-      <find>../../api/todos/todos</find>
-      <find>aldeed</find>
-      <find>Blogs.attachSchema</find>
-      <find>attachschema</find>
-      <find>Blogs</find>
-      <find>react-router</find>
-      <find>../todos/methods</find>
-      <find>todos</find>
-      <find>blogs</find>
-      <find>todo</find>
-      <find>getall</find>
-      <find>meteor/t</find>
-      <find>submit_post</find>
-      <find>message</find>
-      <find>handleAddBlog</find>
       <find>addPostForm</find>
       <find>client/main</find>
       <find>Template</find>
       <find>bootstrap</find>
       <find>../../</find>
-      <find>logo</find>
       <find>blog-wrap</find>
+      <find>padding-top: 5rem;</find>
+      <find>5rem</find>
+      <find>body {</find>
+      <find>style</find>
+      <find>fill-rule</find>
+      <find>layouts</find>
+      <find>render</find>
+      <find>hydrate</find>
+      <find>ecmascript</find>
+      <find>react-hot-loader/babel</find>
+      <find>dispatchCallAddBlog</find>
+      <find>/assets</find>
+      <find>logo</find>
+      <find>Blog</find>
+      <find>Main.js</find>
+      <find>layouts/main</find>
+      <find>mapStateToProps</find>
+      <find>calladd</find>
+      <find>callRemoveBlog</find>
+      <find>handleRemove</find>
+      <find>blogId</find>
+      <find>mmain</find>
+      <find>home</find>
+      <find>main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,14 +186,10 @@
       <list>
         <option value="$PROJECT_DIR$/lib/collections.js" />
         <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/imports/startup/both/routes.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/subpage/subpage.scss" />
         <option value="$PROJECT_DIR$/imports/ui/layouts/main/main.scss" />
-        <option value="$PROJECT_DIR$/imports/startup/server/index.js" />
         <option value="$PROJECT_DIR$/imports/startup/server/register-api.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/imports/api/redux/reducers.js" />
-        <option value="$PROJECT_DIR$/imports/api/redux/async-actions.js" />
         <option value="$PROJECT_DIR$/imports/api/redux/actions.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home/home.scss" />
         <option value="$PROJECT_DIR$/imports/ui/pages/subpage/Subpage.js" />
@@ -207,16 +200,33 @@
         <option value="$PROJECT_DIR$/imports/api/blogs/blogs.js" />
         <option value="$PROJECT_DIR$/imports/api/blogs/methods.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/blog-item/Blog.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/home/Home.js" />
-        <option value="$PROJECT_DIR$/client/main.jade" />
         <option value="$PROJECT_DIR$/imports/ui/templates/header.jade" />
         <option value="$PROJECT_DIR$/imports/ui/templates/header.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/NavigationHeaderBar.js" />
-        <option value="$PROJECT_DIR$/imports/ui/layouts/main/Main.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/container/FeaturedStory.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/container/MainFeaturedStory.js" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/home/Home.js" />
+        <option value="$PROJECT_DIR$/client/main.jade" />
+        <option value="$PROJECT_DIR$/client/navigation.jade" />
+        <option value="$PROJECT_DIR$/client/navigation-header-bar.jsx" />
+        <option value="$PROJECT_DIR$/imports/startup/server/index.js" />
+        <option value="$PROJECT_DIR$/client/navigation-header-bar.jade" />
+        <option value="$PROJECT_DIR$/imports/startup/server/accounts-config.js" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/imports/api/redux/reducers.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/container/Post.js" />
+        <option value="$PROJECT_DIR$/imports/api/redux/async-actions.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/container/FeaturedPosts.js" />
+        <option value="$PROJECT_DIR$/imports/ui/layouts/main/Main.js" />
+        <option value="$PROJECT_DIR$/imports/ui/layouts/compose/Compose.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/container/Editor.js" />
+        <option value="$PROJECT_DIR$/imports/ui/layouts/secondary/Secondary.js" />
+        <option value="$PROJECT_DIR$/imports/startup/both/routes.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/compose/Compose.js" />
       </list>
     </option>
   </component>
@@ -238,6 +248,130 @@
               <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="both" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="secondary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="compose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -258,6 +392,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imports/ui/pages" />
       <recent name="$PROJECT_DIR$/imports/ui/components/container" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -287,12 +422,12 @@
       <workItem from="1555524266388" duration="8727000" />
       <workItem from="1557358495630" duration="980000" />
       <workItem from="1557846740861" duration="19297000" />
-      <workItem from="1558398474318" duration="37000" />
+      <workItem from="1558398474318" duration="19350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34740000" />
+    <option name="totallyTimeSpent" value="54053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,7 +455,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295964" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2780269" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34529147" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -331,149 +466,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.meteor/packages/meteor-tool/.1.8.0_2.cty1uc.prsil++os.osx.x86_64+web.browser+web.browser.legacy+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/meteor-promise/fiber_pool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/security.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/subpage/subpage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/main/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/redux/reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/redux/async-actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/redux/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/register-api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/blog-item/blog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/ssr-init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/blog-item/Blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/blogs/blogs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/blogs/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/subpage/Subpage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -483,16 +475,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/mediumish.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/demopic/2.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -535,17 +517,92 @@
     <entry file="file://$PROJECT_DIR$/assets/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.jade">
+    <entry file="file://$PROJECT_DIR$/client/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/main/Main.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/main/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="30">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/mediumish.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/.finished-upgraders">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/versions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/blog-item/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/ssr-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/container/MainFeaturedStory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -554,25 +611,155 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/NavigationHeaderBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="33" selection-end-line="48" />
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/home.scss">
+    <entry file="file://$PROJECT_DIR$/imports/api/blogs/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/home/Home.js">
+    <entry file="file://$PROJECT_DIR$/imports/api/redux/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="530">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/blogs/blogs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/accounts-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/redux/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/container/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/redux/async-actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/navigation-header-bar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/compose/compose.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="37" lean-forward="true" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/secondary/secondary.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/container/FeaturedPosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/container/Editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/secondary/Secondary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -581,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -591,28 +778,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/startup/both/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/container/FeaturedStory.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/compose/Compose.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="315">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>

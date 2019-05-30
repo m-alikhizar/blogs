@@ -3,6 +3,9 @@ import '../imports/startup/client';
 // import { Template } from 'meteor/templating';
 // import { Blogs } from '../lib/collections';
 import './main.jade'
+import './navigation-header-bar.jade'
+import * as a from '../imports/startup/server/accounts-config'
+
 //
 // if(Meteor.isClient){
 //   Template.addPostForm.events({

@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.4",
+    "babel-plugin-react-transform": "^3.0.0",
+    "bcrypt": "^3.0.6",
     "bootstrap": "^4.3.1",
     "meteor-node-stubs": "^0.4.1",
     "normalize.css": "^8.0.1",
@@ -38,5 +40,23 @@
     ],
     "pathPrefix": "static/",
     "exportAbsolutePaths": true
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-meteor": "^7.4.3",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.6.0"
+  },
+  "ecmascript-hot": {
+    "transformStateless": {
+      "pathMatch": "\\.jsx$",
+      "sourceMatch": [
+        "^import React",
+        "m"
+      ]
+    },
+    "babelEnvForTesting": "production"
   }
 }
