@@ -10,12 +10,28 @@ class Editor extends Component {
         }
 
         this.state = { text: '' }
-        this.handleChange = this.handleChange.bind(this)
     }
 
-    handleChange(value) {
-        this.setState({ text: value })
+    handleChange(content, delta, source, editor) {
+        console.log(content)
     }
+
+    onChangeSelection(range, source, editor) {
+
+    }
+
+    onFocus(range, source, editor) {
+
+    }
+
+    onBlur(previousRange, source, editor) {
+
+    }
+
+    onKeyPress(event) {
+
+    }
+
 
     render() {
         if(this.quill) {
@@ -23,7 +39,16 @@ class Editor extends Component {
                 <section className="featured-posts">
                     <div className="section-title">
                         <h2><span>Editor</span></h2>
-                        <this.quill value={this.state.text} onChange={this.handleChange} />
+                        <this.quill
+                            defaultValue={'hola land'}
+                            placeholder={'Write something...'}
+                            value={this.state.text}
+                            onChange={this.handleChange}
+                            onChangeSelection={this.onChangeSelection}
+                            onFocus={this.onFocus}
+                            onBlur={this.onBlur}
+                            onKeyPress={this.onKeyPress}
+                        />
                     </div>
                 </section>
             )

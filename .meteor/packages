@@ -32,3 +32,6 @@ accounts-github
 accounts-twitter
 useraccounts:bootstrap
 fourseven:scss
+facebook-config-ui
+github-config-ui
+twitter-config-ui

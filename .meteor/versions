@@ -38,10 +38,12 @@ ecmascript-runtime-server@0.7.1
 ejson@1.1.0
 email@1.2.3
 es5-shim@4.8.0
+facebook-config-ui@1.0.2
 facebook-oauth@1.5.0
 fetch@0.1.0
 fourseven:scss@4.12.0
 geojson-utils@1.0.10
+github-config-ui@1.0.1
 github-oauth@1.2.2
 hot-code-push@1.0.4
 html-tools@1.0.11
@@ -108,6 +110,7 @@ templating@1.2.14_1
 templating-tools@1.1.1
 tmeasday:check-npm-versions@0.3.2
 tracker@1.2.0
+twitter-config-ui@1.0.0
 twitter-oauth@1.2.0
 underscore@1.0.10
 url@1.2.0
