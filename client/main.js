@@ -4,7 +4,7 @@ import '../imports/startup/client';
 // import { Blogs } from '../lib/collections';
 import './main.jade'
 import './navigation-header-bar.jade'
-import * as a from '../imports/startup/server/accounts-config'
+// import * as a from '../imports/startup/server/accounts-config'
 
 //
 // if(Meteor.isClient){

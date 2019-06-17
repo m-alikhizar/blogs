@@ -25,8 +25,8 @@ const App = () => (
 );
 
 onPageLoad(() => {
-    console.log(module)
-    const renderMethod = !!module.hot ? ReactDOM.render : ReactDOM.hydrate
 
-    renderMethod(<App />, document.getElementById('app'));
+    const app = document.getElementById('app')
+    const renderMethod = app.innerHTML.trim().length ? ReactDOM.hydrate : ReactDOM.render
+    renderMethod(<App />, document.getElementById('app'))
 });

@@ -1,0 +1,10 @@
+{
+  "public": {
+    "reCaptcha": {
+      "siteKey": "6LdCKKkUAAAAABapsAowq1hbqhf1XStRQEqzUz6O"
+    }
+  },
+  "reCaptcha": {
+    "secretKey": "6LdCKKkUAAAAACdvuf482J3lpS3liPJrpqJUt_vE"
+  }
+}

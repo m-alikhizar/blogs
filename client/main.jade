@@ -4,17 +4,19 @@ head
     meta(name="description" content="")
     meta(name="author" content="")
 
+    base(href="/")
+
     link(rel="icon" href="../assets/img/favicon.ico")
 
     title Mediumish - A Medium inspired blogging platform.
 
     <!-- Fonts -->
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous")
+    link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous")
 
     <!-- Bootstrap core CSS and Custom styles -->
-    link(rel="stylesheet" href="../assets/css/bootstrap.min.css")
-    link(rel="stylesheet" href="../assets/css/mediumish.css")
+    link(type="text/css" href="../assets/css/bootstrap.min.css")
+    link(type="text/css" href="../assets/css/mediumish.css")
 body
     +navigation_header_bar
     div(id="app")
