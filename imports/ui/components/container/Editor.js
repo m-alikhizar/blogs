@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {array, func} from "prop-types";
+import katex from 'katex';
+// import highlightjs from 'highlightjs'
+
 
 class Editor extends Component {
     constructor(props) {
@@ -7,11 +10,19 @@ class Editor extends Component {
 
         if(Meteor.isClient){
             this.quill = require('react-quill')
+
+            window.katex = katex;
+
+
+            window.hljs.configure({
+                languages: ['javascript', 'ruby', 'bash']
+            });
         }
 
         this.state = { text: '' }
 
         this.modules = {
+            syntax: true,
             toolbar: [
                 [{ font: [] }, { size: [] }],
                 [{ align: [] }, 'direction' ],

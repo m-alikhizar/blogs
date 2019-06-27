@@ -1,6 +1,7 @@
 @import "{}/imports/sym-links/quill.core.scss";
 @import "{}/imports/sym-links/quill.bubble.scss";
 //@import "{}/imports/sym-links/quill.snow.scss";
+@import "{}/imports/sym-links/katex.min.scss";
 
 @import "{}/imports/ui/pages/home/home.scss";
 @import "{}/imports/ui/pages/compose/compose.scss";
@@ -8,11 +9,19 @@
 @import "{}/imports/ui/layouts/main/main.scss";
 @import "{}/imports/ui/layouts/secondary/secondary.scss";
 
-
 .login-link-and-dropdown-list {
-  margin: 10px;
+  margin: 8px 18px;
   
   > a {
     text-decoration: none !important;
+  }
+}
+
+.navbar {
+  line-height: 1;
+  padding: .4rem 1rem;
+
+  .nav-link {
+    padding: .66em 1em;
   }
 }
