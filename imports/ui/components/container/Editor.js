@@ -10,6 +10,20 @@ class Editor extends Component {
         }
 
         this.state = { text: '' }
+
+        this.modules = {
+            toolbar: [
+                [{ font: [] }, { size: [] }],
+                [{ align: [] }, 'direction' ],
+                [ 'bold', 'italic', 'underline', 'strike' ],
+                [{ color: [] }, { background: [] }],
+                [{ script: 'super' }, { script: 'sub' }],
+                ['blockquote', 'code-block' ],
+                [{ list: 'ordered' }, { list: 'bullet'}, { indent: '-1' }, { indent: '+1' }],
+                [ 'link', 'image', 'video' ],
+                [ 'clean' ]
+            ],
+        };
     }
 
     handleChange(content, delta, source, editor) {
@@ -32,24 +46,25 @@ class Editor extends Component {
 
     }
 
-
     render() {
         if(this.quill) {
             return (
-                <section className="featured-posts">
+                <section className="new-post">
                     <div className="section-title">
                         <h2><span>Editor</span></h2>
-                        <this.quill
-                            defaultValue={'hola land'}
-                            placeholder={'Write something...'}
-                            value={this.state.text}
-                            onChange={this.handleChange}
-                            onChangeSelection={this.onChangeSelection}
-                            onFocus={this.onFocus}
-                            onBlur={this.onBlur}
-                            onKeyPress={this.onKeyPress}
-                        />
                     </div>
+                    <this.quill
+                        modules={this.modules}
+                        formats={['bold', 'color', 'font', 'code', 'italic', 'link', 'size', 'script', 'underline', 'strike', 'blockquote', 'header', 'indent', 'list', 'align', 'direction', 'code-block', 'formula', 'image', 'video']}
+                        theme="bubble"
+                        placeholder={'Writing is awesome...'}
+                        value={this.state.text}
+                        onChange={this.handleChange.bind(this)}
+                        onChangeSelection={this.onChangeSelection.bind(this)}
+                        onFocus={this.onFocus.bind(this)}
+                        onBlur={this.onBlur.bind(this)}
+                        onKeyPress={this.onKeyPress.bind(this)}
+                    />
                 </section>
             )
         } else {
@@ -57,8 +72,5 @@ class Editor extends Component {
         }
     }
 }
-
-Editor.propTypes = {
-};
 
 export default Editor;

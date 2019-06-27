@@ -1,9 +1,18 @@
+@import "{}/imports/sym-links/quill.core.scss";
+@import "{}/imports/sym-links/quill.bubble.scss";
+//@import "{}/imports/sym-links/quill.snow.scss";
+
 @import "{}/imports/ui/pages/home/home.scss";
 @import "{}/imports/ui/pages/compose/compose.scss";
 
 @import "{}/imports/ui/layouts/main/main.scss";
 @import "{}/imports/ui/layouts/secondary/secondary.scss";
 
-@import "{}/imports/sym-links/quill.core.scss";
-@import "{}/imports/sym-links/quill.bubble.scss";
-@import "{}/imports/sym-links/quill.snow.scss";
+
+.login-link-and-dropdown-list {
+  margin: 10px;
+  
+  > a {
+    text-decoration: none !important;
+  }
+}

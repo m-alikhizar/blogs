@@ -1,5 +1,5 @@
 import '../imports/startup/client';
-
+import '../imports/startup/both/at_config'
 // import { Template } from 'meteor/templating';
 // import { Blogs } from '../lib/collections';
 import './main.jade'

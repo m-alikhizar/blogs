@@ -1,3 +1,20 @@
+const onSubmitHook = function(error, state){
+    if (!error) {
+        if (state === "signIn") {
+            // Successfully logged in
+            // ...
+        }
+        if (state === "signUp") {
+            // Successfully registered
+            // ...
+        }
+    }
+}
+
+const onLogoutHook = function(){
+    Router.go('/home');
+}
+debugger;
 AccountsTemplates.configure({
     // Behavior
     confirmPassword: true,
@@ -34,10 +51,17 @@ AccountsTemplates.configure({
     redirectTimeout: 4000,
 
     // Hooks
-    onLogoutHook: myLogoutFunc,
-    onSubmitHook: mySubmitFunc,
-    preSignUpHook: myPreSubmitFunc,
-    postSignUpHook: myPostSubmitFunc,
+    onSubmitHook: onSubmitHook,
+    onLogoutHook: onLogoutHook,
+    // preSignUpHook: myPreSubmitFunc,
+    // postSignUpHook: myPostSubmitFunc,
+    showReCaptcha: true,
+
+    reCaptcha: {
+        siteKey: Meteor.settings.public.reCaptcha.siteKey,
+        theme: "light",
+        data_type: "image"
+    },
 
     // Texts
 
@@ -49,10 +73,6 @@ AccountsTemplates.configure({
             resetPwd: "Reset Pwd Text",
             signIn: "Sign In Text",
             signUp: "Sign Up Text",
-        },
-        socialSignUp: "Register",
-        socialIcons: {
-            "meteor-developer": "fa fa-rocket"
         },
         title: {
             changePwd: "Password Title",
@@ -66,8 +86,8 @@ AccountsTemplates.configure({
 
 
 
-        navSignIn: "signIn",
-        navSignOut: "signOut",
+        navSignIn: "Sign inn",
+        navSignOut: "Sign out",
         optionalField: "optional",
         pwdLink_pre: "",
         pwdLink_link: "forgotPassword",
@@ -85,8 +105,7 @@ AccountsTemplates.configure({
         socialAdd: "add",
         socialConfigure: "configure",
         socialIcons: {
-            // google: "myGoogleIcon",
-            // "meteor-developer": "myMeteorIcon",
+            "meteor-developer": "fa fa-rocket"
         },
         inputIcons: {
             isValidating: "fa fa-spinner fa-spin",
@@ -112,35 +131,4 @@ AccountsTemplates.configure({
         termsAnd: "and",
         termsTerms: "terms",
     }
-});
-
-
-
-const onSubmitHook = function(error, state){
-    if (!error) {
-        if (state === "signIn") {
-            // Successfully logged in
-            // ...
-        }
-        if (state === "signUp") {
-            // Successfully registered
-            // ...
-        }
-    }
-}
-
-const onLogoutHook = function(){
-    Router.go('/home');
-}
-
-AccountsTemplates.configure({
-    onSubmitHook: onSubmitHook,
-    onLogoutHook: onLogoutHook,
-    showReCaptcha: true,
-
-    reCaptcha: {
-        siteKey: Meteor.settings.public.reCaptcha.siteKey
-        theme: "light",
-        data_type: "image"
-    },
 })
