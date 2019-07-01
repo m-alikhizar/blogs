@@ -16,6 +16,9 @@ Blogs.schema = new SimpleSchema({
     content: {
         type: String
     },
+    text: {
+        type: String
+    },
     published: {
         type: Boolean, defaultValue: false
     }

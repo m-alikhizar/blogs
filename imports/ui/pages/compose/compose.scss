@@ -1,6 +1,20 @@
 .ql-container {
   font-size: 21px;
 
+  .ql-editor {
+    padding: 0;
+    min-height: 65px;
+
+    &.ql-blank::before {
+      color: rgba(143, 143, 143, 0.6);
+      content: attr(data-placeholder);
+      font-style: unset;
+      position: absolute;
+
+      animation: pulse 1.5s alternate infinite ease-in-out;
+    }
+  }
+
   iframe.ql-video {
     margin: 0 auto;
     width: 600px;
@@ -9,3 +23,25 @@
 
 }
 
+.compose-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+
+  > h2 {
+    margin: 0;
+    border: none;
+  }
+}
+
+
+
+@keyframes pulse {
+  0% {
+    color: rgba(143, 143, 143, 0.2)
+  }
+  100% {
+    color: rgba(143, 143, 143, 0.8)
+  }
+}

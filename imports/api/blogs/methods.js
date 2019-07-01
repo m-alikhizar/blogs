@@ -26,6 +26,17 @@ export const blogsAdd = new ValidatedMethod({
     },
 });
 
+export const create = new ValidatedMethod({
+    name: 'blogs.methods.create',
+    validate: Blogs.schema.validator(),
+    run({ title, content, text, published }) {
+
+        const user = Meteor.user()
+        console.log(user)
+        return Blogs.insert({ title, content, text, published });
+    },
+});
+
 export const blogsRemove = new ValidatedMethod({
     name: 'blogs.methods.remove',
     validate: new SimpleSchema({ blogId: { type: String } }).validator(),

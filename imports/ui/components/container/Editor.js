@@ -3,7 +3,6 @@ import {array, func} from "prop-types";
 import katex from 'katex';
 // import highlightjs from 'highlightjs'
 
-
 class Editor extends Component {
     constructor(props) {
         super(props)
@@ -35,10 +34,36 @@ class Editor extends Component {
                 [ 'clean' ]
             ],
         };
+
+        this.exports = {
+            getContents: this.getContents.bind(this),
+            getText: this.getText.bind(this)
+
+        }
     }
 
     handleChange(content, delta, source, editor) {
-        console.log(content)
+        // console.log(content)
+    }
+
+    componentDidMount() {
+        if (typeof this.reactQuillRef.getEditor === 'function') {
+            this.editor = this.reactQuillRef.getEditor()
+            this.props.onEditorLoaded(this.editor, this.exports)
+        }
+    }
+
+    getContents() {
+        return this.editor.getContents()
+    }
+
+    getText() {
+        return this.editor.getText()
+    }
+
+    getHtmlContents() {
+        const html = this.editor.getHTML()
+        this.props.getHtmlContents(html)
     }
 
     onChangeSelection(range, source, editor) {
@@ -60,28 +85,28 @@ class Editor extends Component {
     render() {
         if(this.quill) {
             return (
-                <section className="new-post">
-                    <div className="section-title">
-                        <h2><span>Editor</span></h2>
-                    </div>
-                    <this.quill
-                        modules={this.modules}
-                        formats={['bold', 'color', 'font', 'code', 'italic', 'link', 'size', 'script', 'underline', 'strike', 'blockquote', 'header', 'indent', 'list', 'align', 'direction', 'code-block', 'formula', 'image', 'video']}
-                        theme="bubble"
-                        placeholder={'Writing is awesome...'}
-                        value={this.state.text}
-                        onChange={this.handleChange.bind(this)}
-                        onChangeSelection={this.onChangeSelection.bind(this)}
-                        onFocus={this.onFocus.bind(this)}
-                        onBlur={this.onBlur.bind(this)}
-                        onKeyPress={this.onKeyPress.bind(this)}
-                    />
-                </section>
+                <this.quill
+                    modules={this.modules}
+                    formats={['bold', 'color', 'background', 'font', 'code', 'italic', 'link', 'size', 'script', 'underline', 'strike', 'blockquote', 'header', 'indent', 'list', 'align', 'direction', 'code-block', 'formula', 'image', 'video']}
+                    theme="bubble"
+                    placeholder={'Writing is awesome...'}
+                    ref={(el) => { this.reactQuillRef = el }}
+                    value={this.state.text}
+                    onChange={this.handleChange.bind(this)}
+                    onChangeSelection={this.onChangeSelection.bind(this)}
+                    onFocus={this.onFocus.bind(this)}
+                    onBlur={this.onBlur.bind(this)}
+                    onKeyPress={this.onKeyPress.bind(this)}
+                />
             )
         } else {
             return <div>No editor supported.</div>
         }
     }
 }
+
+Editor.propTypes = {
+    // onEditorLoaded: oneOfType([arrayOf(element), object]).isRequired,
+};
 
 export default Editor;

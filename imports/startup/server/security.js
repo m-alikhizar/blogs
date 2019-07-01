@@ -1,5 +1,5 @@
-AccountsTemplates.configure({
-    reCaptcha: {
-        secretKey: Meteor.settings.reCaptcha.secretKey
-    },
-});
+// AccountsTemplates.configure({
+//     reCaptcha: {
+//         secretKey: Meteor.settings.reCaptcha.secretKey
+//     },
+// });

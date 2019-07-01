@@ -1,20 +1,65 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { element, oneOfType, arrayOf, object } from 'prop-types';
+import {Meteor} from 'meteor/meteor';
 import {callAddBlog} from "../../../api/redux/async-actions";
 import Editor from '../../components/container/Editor'
 
-const Compose = (props) => {
-    const { children, blogs} = props
-    return (
-        <React.Fragment>
-            <div className="container">
-                <section>
-                    <Editor {...props}/>
+class Compose extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.editor = {}
+    }
+
+    onEditorLoaded(ed, api) {
+        console.log('editor loaded.')
+        this.editor.api = api;
+    }
+
+    onSave() {
+        const delta = this.editor.api.getContents()
+        const text = this.editor.api.getText()
+        const stringified = JSON.stringify(delta)
+
+        console.log(stringified)
+
+        const payload = {
+            title: 'abc',
+            text: text,
+            content: stringified,
+            published: false
+        }
+
+        Meteor.call('blogs.methods.create', payload, (err,res) => {
+            if(err) {
+                console.log(err)
+            } else {
+                console.log('saved...')
+            }
+
+        })
+
+
+    }
+
+    render() {
+        const { children, blogs } = this.props
+
+        return (
+            <React.Fragment>
+                <section className="new-post">
+                    <div className="section-title compose-controls">
+                        <h2><span>Editor</span></h2>
+                        <div>
+                            <button onClick={this.onSave.bind(this)}>Save</button>
+                        </div>
+                    </div>
+                    <Editor onEditorLoaded={this.onEditorLoaded.bind(this)}/>
                 </section>
-            </div>
-        </React.Fragment>
-    )
+            </React.Fragment>
+        )
+    }
 }
 
 Compose.propTypes = {
