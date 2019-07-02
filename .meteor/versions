@@ -4,8 +4,6 @@ accounts-github@1.4.2
 accounts-oauth@1.1.16
 accounts-password@1.5.1
 accounts-twitter@1.4.2
-accounts-ui@1.3.1
-accounts-ui-unstyled@1.4.2
 aldeed:collection2@3.0.2
 aldeed:simple-schema@1.5.4
 allow-deny@1.1.0
@@ -22,6 +20,7 @@ caching-compiler@1.2.1
 caching-html-compiler@1.0.6
 callback-hook@1.1.0
 check@1.3.1
+coffeescript@1.0.17
 ddp@1.4.0
 ddp-client@2.3.3
 ddp-common@1.4.0
@@ -53,7 +52,6 @@ insecure@1.0.7
 inter-process-messaging@0.1.0
 jquery@1.11.11
 launch-screen@1.1.1
-less@2.8.0
 livedata@1.0.18
 localstorage@1.2.0
 logging@1.1.20
@@ -61,6 +59,23 @@ mdg:validated-method@1.2.0
 mdg:validation-error@0.2.0
 meteor@1.9.2
 meteor-base@1.4.0
+meteortoys:allthings@7.0.1
+meteortoys:authenticate@4.0.0
+meteortoys:autopub@4.0.0
+meteortoys:blueprint@4.0.0
+meteortoys:email@4.0.0
+meteortoys:hotreload@4.0.0
+meteortoys:listen@4.0.0
+meteortoys:method@4.0.0
+meteortoys:mobile@4.0.0
+meteortoys:pub@4.0.0
+meteortoys:result@4.0.0
+meteortoys:shell@4.0.0
+meteortoys:status@4.0.0
+meteortoys:sub@4.0.0
+meteortoys:throttle@4.0.0
+meteortoys:toggle@4.0.0
+meteortoys:toykit@4.0.2
 minifier-css@1.4.1
 minifier-js@2.4.0
 minifiers@1.1.7
@@ -76,6 +91,8 @@ mongo-dev-server@1.1.0
 mongo-id@1.0.7
 mquandalle:jade@0.4.9
 mquandalle:jade-compiler@0.4.5
+msavin:jetsetter@4.0.0
+msavin:mongol@7.0.1
 nathantreid:static-assets@0.1.0
 npm-bcrypt@0.9.3
 npm-mongo@3.1.1
@@ -99,6 +116,7 @@ session@1.2.0
 sha@1.0.9
 shell-server@0.4.0
 socket-stream-client@0.2.2
+softwarerero:accounts-t9n@1.3.11
 spacebars@1.0.13
 spacebars-compiler@1.1.1
 srp@1.0.12
@@ -112,5 +130,7 @@ twitter-config-ui@1.0.0
 twitter-oauth@1.2.0
 underscore@1.0.10
 url@1.2.0
+useraccounts:bootstrap@1.14.2
+useraccounts:core@1.14.2
 webapp@1.7.2
 webapp-hashing@1.0.9

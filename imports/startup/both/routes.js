@@ -11,7 +11,7 @@ import Accounts from '../../ui/components/container/Accounts'
 
 export default (
     <React.Fragment>
-        <Accounts />
+        {/*<Accounts />*/}
         <Route exact path="/" component={() => (<Main><Home /></Main>)} />
         <Route exact path="/compose" component={() => (<Secondary><Compose /></Secondary>)} />
     </React.Fragment>
