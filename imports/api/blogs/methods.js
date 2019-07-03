@@ -54,3 +54,4 @@ export const blogEdit = new ValidatedMethod({
         return Blogs.update({ _id: blogId }, { $set: { finished: !state } });
     },
 });
+
